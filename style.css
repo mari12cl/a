@@ -1,0 +1,89 @@
+
+.viagem_mainDiv
+{
+    border: 1px solid lightgrey;
+}
+
+.viagem_mainDiv img
+{
+  width: 100%;
+}
+
+.viagem_mainDiv h5 , .viagem_mainDiv p
+{
+margin: 20px;
+}
+
+
+.filmesHead
+{
+    font-size: 20px;
+    padding: 6px 22px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.filmesHead i
+{
+float: right;
+}
+
+.filmesText span
+{
+color: orange;
+}
+
+
+.livros
+{
+    margin-bottom: 20px;
+}
+
+#contato iframe
+{
+    width: 100%;
+}
+
+.nav{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.link{
+    position: relative;
+    display: block;
+    font-weight: 900;
+font-size: 2rem;
+line-height: 1.5;
+text-decoration: none;
+color: transparent;
+-webkit-text-stroke: 1px white;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select:none;
+}
+.link:hover{
+    color: white;
+    -webkit-text-stroke: 1px purple;
+    transition: 0.25s;
+}
+.link:hover::before{
+    transform: translate(12px,-12px);
+    color: red;
+    -webkit-text-stroke: 1px purple; 
+}
+.link:hover::after{
+    transform: translate(24px,-24px);
+    color: aqua;
+    -webkit-text-stroke: 1px purple;
+}
+.link:hover::before,.link:hover::after{
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px transparent; 
+}
